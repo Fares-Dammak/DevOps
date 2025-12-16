@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_CREDENTIALS = "jenkins-example"
+        DOCKER_CREDENTIALS = "nexus"
         IMAGE_TAG = "${env.GIT_COMMIT}"
 
         NEXUS_HOST = "192.168.33.10:8085"
